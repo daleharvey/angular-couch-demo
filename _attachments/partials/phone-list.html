@@ -5,8 +5,8 @@
   <li>
     Sort by:
     <select name="orderProp">
-      <option value="name">Alphabetical</option>
-      <option value="age">Newest</option>
+      <option value="value.name">Alphabetical</option>
+      <option value="value.ram">Ram</option>
     </select>
   </li>
 </ul>
@@ -14,8 +14,8 @@
 
 <ul class="phones">
   <li ng:repeat="phone in phones.$filter(query).$orderBy(orderProp)">
-    <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
-    <a href="#/phones/{{phone.id}}" class="thumb"><img ng:src="{{phone.imageUrl}}"></a>
-    <p>{{phone.snippet}}</p>
+    <a href="#/phones/{{phone.id}}">{{phone.value.name}}</a> - {{phone.value.ram}}
+    <a href="#/phones/{{phone.id}}" class="thumb"><img ng:src="{{phone.value.imageUrl}}"></a>
+    <p>{{phone.value.snippet}}</p>
   </li>
 </ul>
