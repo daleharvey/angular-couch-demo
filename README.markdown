@@ -7,6 +7,7 @@ Dependencies
 ============
 
 [CouchDB](http://couchdb.apache.org/)
+
 [The CouchApp Command line tool](http://couchapp.org/page/installing)
 
 Building
@@ -18,4 +19,4 @@ Building
         couchapp pushdocs _attachments/phones/ http://127.0.0.1:5984/phonecat
         couchapp push http://127.0.0.1:5984
 
-then open [http://127.0.0.1:5984/phonecat/_design/v1/index.html#/phones](http://127.0.0.1:5984/phonecat/_design/v1/index.html#/phones) in your browser
+then open [http://127.0.0.1:5984/phonecat/_design/phonecat/index.html#/phones](http://127.0.0.1:5984/phonecat/_design/v1/index.html#/phones) in your browser
